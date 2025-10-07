@@ -18,6 +18,14 @@ class UserAccessControl {
             console.log('Permission denied.');
         }
     }
+
+    checkAcceptence(){
+        if (this.role === 'dev' || this.role === 'admin'){
+            console.log("Developer has the permission to override.");
+        } else {
+            console.log("You're not a Developer nor Admin.");
+        }
+    }
 }
 
 // Example usage:
