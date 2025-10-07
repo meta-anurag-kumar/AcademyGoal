@@ -10,6 +10,14 @@ class UserAccessControl {
             console.log('Access denied: User have limited privileges.');
         }
     }
+
+    checkPermission() {
+        if (this.role === 'editor' || this.role === 'admin') {
+            console.log('Permission granted.');
+        } else {
+            console.log('Permission denied.');
+        }
+    }
 }
 
 // Example usage:
