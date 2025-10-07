@@ -5,9 +5,9 @@ class UserAccessControl {
 
     checkAccess() {
         if (this.role === 'admin') {
-            console.log('Access granted: Full privileges.');
+            console.log('Access granted: User have full privileges.');
         } else {
-            console.log('Access denied: Limited privileges.');
+            console.log('Access denied: User have limited privileges.');
         }
     }
 }
